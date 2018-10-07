@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Poll</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .navbar{
+            display: block;
+            height: 3em;
+            background-color: #D8E2EE;
+            margin:0px;
+            box-shadow: 0 0 10px 0 black;
+        }  
+        .new{
+            display: inline;
+        }
+
+        .new-button{
+            margin: 0.45em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #3E567D;
+        }
+        .search{
+            margin: 0.45em;
+            float: right;
+            border-radius: 10%;
+            border: #9bc1ff;
+            height: 20px;
+        }
+
+        .new-button{
+            border: none;
+            font-size: 1.2em;
+            background:none;
+            font-weight: bold;
+
+        }
+        .poll-group{
+            margin: 2px 0px;
+        }
+        .poll{
+            display: block;
+            background-color: #CBD9E9;
+            padding: 8px;
+
+            height: 24px;
+            
+            
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .title{
+            font-size: 0.7em;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        span.poll-number{
+            float: right;
+            font-size: 0.7em;
+            margin: 0;
+            padding: 3px;
+            height: 100%;
+        }
+        .question{
+            display: inline;
+            margin:0px  0px 1px 0px;
+            padding: 2px 0px;
+        }
+        span.response{
+            float:right;
+            margin: 0px;
+        }
+        .poll-content{
+            background-color: #f6f2ff;
+            padding: 18px 5px;
+            height: 14px;
+
+        }
+        
+        
+        
+
+
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-item new">
+            <button class="new-button">+ New</button>
+        </div>
+        <div class="nav-item search">
+            <input type="text" class="search" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="poll-group">
+            <div class="poll">
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i><i class="material-icons"></i>
+                <span class="title">ITCS 1110-May 31</span>
+                <span class="poll-number">2 polls</span>
+
+            </div>
+            <div class="poll-content ">
+                <input type="checkbox"><span class="question"> What word do you think of when you hear "life" ? </span>
+                <span  class="response">0 response</span>
+            </div>
+        </div>
+        <div class="poll-group">
+            <div class="poll">
+                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i><i class="material-icons"></i>
+                <span class="title">Test 2</span>
+                <span class="poll-number">3 polls</span>
+            </div>
+            <div class="poll-content hidden">
+                <input type="checkbox"><span class="question"> Question 2</span>
+                <span class="response"></span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
