@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Freppn-App-Website</title>
+</head>
+<body>
+		<style type="text/css">
+		     body {
+		     	
+		     	background: linear-gradient( 135deg, rgba(17, 122, 101, 0.8) 0%, rgba(26, 82, 118, 0.8) 100%);
+		     	background-image: -webkit-linear-gradient( 135deg, rgba(17, 122, 101, 0.8) 0%, rgba(26, 82, 118, 0.8) 100%);
+		     	width: 100%; 
+		     	overflow-y: hidden; 
+		     	overflow-x: hidden;
+		     	
+		     }
+			.logo {
+			   position: absolute;
+				top: 35%;
+				left: 45%;
+				text-align: center;
+				max-width: 100%;
+				height: auto;
+				width: 120px;
+
+			}
+			
+			.bar {
+				position: absolute;
+				height: 2px;
+				width: 600px;
+				margin: 0 auto;
+				background: transparent;
+			    margin: 0 auto;
+			    top: 75%;
+			    left: 28%;
+              
+			}
+			.circle1 {
+				position: absolute;
+				top: -10px;
+				margin-left: -30px;
+				height: 60px;
+				width: 60px;
+				left: 0;
+				background: #fff;
+				border-radius: 30%;
+				-webkit-animation: move 8s infinite;
+				
+				
+			}
+			
+		  
+			@-webkit-keyframes move {
+				0% {
+					left: 0;
+
+				}
+				50% {
+					left: 100%;
+					-webkit-transform: rotate(450deg);
+					width: 50px;
+					height: 50px;
+					opacity: 0.8
+
+				}
+				75% {
+					left: 100%;
+					-webkit-transform: rotate(450deg);
+					width: 80px;
+					height: 80px;
+					opacity: 0.4;
+				}
+				100% {
+					right: 100%;
+					width: 50px;
+					height: 50px;
+
+				}
+			}
+			
+		</style>
+		<div class="logo">
+			<img src="logo.jpg" alt="Logo" height="150px" width="150px">
+		</div>
+		  
+			<div class="bar">
+				<div class="circle1"></div>	
+				<!-- <p>Loading</p> -->
+				
+			</div>
+	
+		
+</body>
+</html>
